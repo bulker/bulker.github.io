@@ -8,8 +8,9 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
+# bulker's Toy
+> [toy/폐지줍줍](toy/폐지줍줍.html)
 
-- [toy](toy/폐지줍줍.html)
 
 ```markdown
 Syntax highlighted code block
