@@ -10,6 +10,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 
 # bulker's Toy
 > [toy/폐지줍줍](toy/폐지줍줍.html)
+> [toy/폐지줍줍2](toy/폐지줍줍2.html)
 
 
 ```markdown
