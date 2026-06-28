@@ -1,24 +1,27 @@
-## Welcome to bulker's GitHub Pages
+# bulker's GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/bulker/bulker.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+안녕하세요! 이 페이지는 HTML을 기반으로 제작된 다양한 유틸리티 도구와 토이 프로젝트(미니 게임 등)를 한데 모아 제공하는 개인 포털 공간입니다.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## 제공 중인 서비스 소개
 
+### 1. Toys (토이 프로젝트)
+* **폐지줍줍** & **폐지줍줍 2**: 
+  - 가볍게 즐길 수 있는 바닐라 자바스크립트 기반의 미니 게임입니다.
+  - 간단한 키 조작이나 마우스 드래그를 통해 고득점을 노려보세요!
 
-## bulker's Toy
-- [toy/폐지줍줍](toy/폐지줍줍.html)
-- [toy/폐지줍줍2](toy/폐지줍줍2.html)
+### 2. Utilities (유틸리티)
+* **Google Timeline JSON to KML Converter**:
+  - 구글 타임라인의 JSON 데이터 형식을 구글 어스 등에서 호환되는 KML 포맷으로 변환해 주는 유틸리티입니다.
+  - 프론트엔드 환경에서 안전하게 로컬 데이터를 처리하므로, 개인정보 유출 우려 없이 변환 작업을 수행할 수 있습니다.
 
-## bulker's Utility
-- [Google Timeline Json to KML Converter](tools/timeline2kml.html)
+---
 
-### Markdown
-- For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## 사용 가이드
 
-### Jekyll Themes
+1. 좌측 상단의 삼선 메뉴(`☰`) 버튼을 클릭하면 전체 도구 목록이 담긴 **사이드바 메뉴**가 열립니다.
+2. 각 카테고리(Toys, Utilities)를 클릭하여 하위의 도구 링크를 찾아 클릭할 수 있습니다.
+3. 원하지 않거나 더 넓은 작업 화면을 확보하고 싶을 때는 메뉴를 다시 접어 전체 화면으로 편리하게 이용 가능합니다.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bulker/bulker.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+---
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+*지속적으로 유용한 HTML 도구들이 추가될 예정입니다. 문의나 피드백은 bulker GitHub 저장소 이슈를 이용해 주세요.*

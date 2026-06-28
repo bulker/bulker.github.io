@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bulker's github page</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="bulker's workspace featuring various HTML utilities, mini games, and tools.">
+  <meta name="author" content="bulker">
+  
+  <!-- Modern Fonts and CSS -->
+  <link rel="stylesheet" href="css/portal.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Marked Markdown Parser CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+  <div id="app-container">
+    
+    <!-- Mobile Sidebar Overlay -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+    <!-- Left Collapsible Sidebar -->
+    <aside id="sidebar" class="collapsed">
+      <div class="sidebar-header">
+        <div class="logo-area">
+          <div class="logo-icon">B</div>
+          <span class="logo-text">bulker's Page</span>
+        </div>
+        <button id="close-sidebar-btn" class="close-sidebar-btn" data-tooltip="메뉴 닫기">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <!-- Home / Guide Node -->
+        <div class="tree-node">
+          <a href="#home" class="nav-item">
+            <i data-lucide="home"></i>
+            <span class="label-text">Home</span>
+          </a>
+        </div>
+
+        <div class="tree-node">
+          <a href="#index.md" class="nav-item">
+            <i data-lucide="info"></i>
+            <span class="label-text">소개 및 가이드</span>
+          </a>
+        </div>
+
+        <!-- Toys Node (Collapsible Category) -->
+        <div class="tree-node">
+          <div class="tree-label">
+            <i data-lucide="gamepad-2"></i>
+            <span>Toys (토이 프로젝트)</span>
+            <span class="arrow-icon">&#9656;</span>
+          </div>
+          <div class="tree-children">
+            <a href="#toy/폐지줍줍.html" class="nav-item">
+              <i data-lucide="file-code"></i>
+              <span class="label-text">폐지줍줍</span>
+            </a>
+            <a href="#toy/폐지줍줍2.html" class="nav-item">
+              <i data-lucide="file-code"></i>
+              <span class="label-text">폐지줍줍 2</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Utilities Node (Collapsible Category) -->
+        <div class="tree-node">
+          <div class="tree-label">
+            <i data-lucide="wrench"></i>
+            <span>Utilities (유틸리티)</span>
+            <span class="arrow-icon">&#9656;</span>
+          </div>
+          <div class="tree-children">
+            <a href="#tools/timeline2kml.html" class="nav-item">
+              <i data-lucide="map-pin"></i>
+              <span class="label-text">Timeline to KML</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- Right Main Content Area -->
+    <main id="main-content">
+      
+      <!-- Topbar -->
+      <header class="top-bar">
+        <button id="open-sidebar-btn" class="open-sidebar-btn" data-tooltip="메뉴 열기">
+          <i data-lucide="menu"></i>
+        </button>
+        
+        <div class="page-title">
+          <span id="current-category"></span>
+          <span id="active-title" class="active-title">Welcome</span>
+        </div>
+      </header>
+
+      <!-- Main Contents Body -->
+      <section class="content-body">
+        
+        <!-- Welcome / Home Screen -->
+        <div id="welcome-screen" class="welcome-screen">
+          <div class="welcome-logo">B</div>
+          <h1 class="welcome-title">Welcome to bulker's Portal</h1>
+          <p class="welcome-desc">
+            좌측 상단의 메뉴 버튼(<i data-lucide="menu" style="display:inline-block; width:14px; height:14px; vertical-align:middle; margin:0 2px;"></i>)을 눌러 사이드바를 열고, 개발/제공 중인 다양한 토이 게임 및 유틸리티 도구를 탐색하고 이용해 보세요.
+          </p>
+        </div>
+
+        <!-- Markdown View Area -->
+        <div id="markdown-view" class="markdown-view"></div>
+
+        <!-- HTML Tool Iframe Area -->
+        <iframe id="iframe-view" class="content-iframe" src="about:blank"></iframe>
+
+      </section>
+    </main>
+
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/portal.js"></script>
+  <script>
+    // Initialize Lucide Icons
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
