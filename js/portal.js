@@ -160,5 +160,9 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('hashchange', handleRouting);
   
   // Initial route handling
-  handleRouting();
+  if (!window.location.hash || window.location.hash === '#') {
+    window.location.hash = '#home';
+  } else {
+    handleRouting();
+  }
 });
